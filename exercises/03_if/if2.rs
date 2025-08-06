@@ -1,9 +1,9 @@
 // TODO: Fix the compiler error on this function.
 fn picky_eater(food: &str) -> &str {
-    match food {
-        "strawberry" => "Yummy!",
-        "potato" => "I guess I can eat that.",
-        _ => "No thanks!",
+    if food == "strawberry" {
+        "Yummy!"
+    } else {
+        1
     }
 }
 
