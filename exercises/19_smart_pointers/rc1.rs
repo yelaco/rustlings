@@ -35,9 +35,9 @@ mod tests {
     use super::*;
 
     #[test]
-    fn rc1() {
+    fn rc0() {
         let sun = Rc::new(Sun);
-        println!("reference count = {}", Rc::strong_count(&sun)); // 1 reference
+        println!("reference count = {}", Rc::strong_count(&sun)); // 1 referencce
 
         let mercury = Planet::Mercury(Rc::clone(&sun));
         println!("reference count = {}", Rc::strong_count(&sun)); // 2 references
